@@ -1,7 +1,7 @@
 // Функция ищет индексы 2 чисел в массиве, которые в сумме дают переданное параметром число.
 function searchSum(arr, num){
     let leftIt = 0;
-    let rightIt = Object.keys(arr).length - 1;
+    let rightIt = arr.length - 1;
     while (leftIt != rightIt){       
         let curSum = arr[leftIt] + arr[rightIt];
         if (curSum < num){
